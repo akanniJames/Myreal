@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Akanni James</title>
+<meta name="description" content="Get in touch with Akanni James.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="status-strip">SYSTEM STATUS: ONLINE · LAGOS, NIGERIA · UPTIME 3 YRS</div>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<nav class="site-nav">
+  <div class="container">
+    <div class="brand">james@portfolio:~$<span class="cursor" aria-hidden="true"></span></div>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html"><span class="idx">01</span> home</a></li>
+      <li><a href="about.html"><span class="idx">02</span> about</a></li>
+      <li><a href="projects.html"><span class="idx">03</span> projects</a></li>
+      <li><a href="planner.html"><span class="idx">04</span> planner</a></li>
+      <li><a href="contact.html" aria-current="page"><span class="idx">05</span> contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+  <div class="container">
+
+    <section style="padding-top:40px;">
+      <div class="section-eyebrow">// ./send_message.sh</div>
+      <h1>Contact</h1>
+      <p>Have a project, opportunity, or question? Send a message below.</p>
+    </section>
+
+    <section style="padding-top:0;">
+      <div class="grid-2">
+
+        <div class="terminal">
+          <div class="terminal__bar">
+            <span class="terminal__dot terminal__dot--warn"></span>
+            <span class="terminal__dot terminal__dot--safe"></span>
+            <span class="terminal__dot terminal__dot--danger"></span>
+            <span class="terminal__title">message_form.html</span>
+          </div>
+          <div class="terminal__body">
+
+            <form id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" value="Akanni James" placeholder="Your full name" required>
+                <div class="field-error" data-error-for="name"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                <div class="field-error" data-error-for="email"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="08012345678 or +2348012345678" required>
+                <div class="field-error" data-error-for="phone"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                <div class="field-error" data-error-for="message"></div>
+              </div>
+
+              <button type="submit" class="btn btn--primary">Send Message</button>
+              <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+            </form>
+
+          </div>
+        </div>
+
+        <div>
+          <div class="terminal">
+            <div class="terminal__bar">
+              <span class="terminal__dot terminal__dot--warn"></span>
+              <span class="terminal__dot terminal__dot--safe"></span>
+              <span class="terminal__dot terminal__dot--danger"></span>
+              <span class="terminal__title">contact_info.txt</span>
+            </div>
+            <div class="terminal__body">
+              <ul class="contact-info-list">
+                <li><span class="k">Location</span> Lagos, Nigeria</li>
+                <li><span class="k">Focus</span> Network Security &amp; Ethical Hacking</li>
+                <li><span class="k">Availability</span> Open to internships &amp; collaborations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    &copy; 2026 Akanni James · COS 106 Term Project · MIVA Open University
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
