@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academic Planner — Akanni James</title>
+<meta name="description" content="Interactive academic task planner for Akanni James.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="status-strip">SYSTEM STATUS: ONLINE · LAGOS, NIGERIA · UPTIME 3 YRS</div>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<nav class="site-nav">
+  <div class="container">
+    <div class="brand">james@portfolio:~$<span class="cursor" aria-hidden="true"></span></div>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">menu</button>
+    <ul class="nav-links">
+      <li><a href="index.html"><span class="idx">01</span> home</a></li>
+      <li><a href="about.html"><span class="idx">02</span> about</a></li>
+      <li><a href="projects.html"><span class="idx">03</span> projects</a></li>
+      <li><a href="planner.html" aria-current="page"><span class="idx">04</span> planner</a></li>
+      <li><a href="contact.html"><span class="idx">05</span> contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main">
+  <div class="container">
+
+    <section style="padding-top:40px;">
+      <div class="section-eyebrow">// ./task_manager.sh</div>
+      <h1>Academic Planner</h1>
+      <p>Add tasks, mark them complete, or delete them. Your list is saved in this browser, so it will still be here next time you visit.</p>
+    </section>
+
+    <section style="padding-top:0;">
+      <div class="terminal">
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--warn"></span>
+          <span class="terminal__dot terminal__dot--safe"></span>
+          <span class="terminal__dot terminal__dot--danger"></span>
+          <span class="terminal__title">task_manager.sh</span>
+        </div>
+        <div class="terminal__body">
+
+          <form id="plannerForm" class="planner-form" novalidate>
+            <label for="taskInput" class="visually-hidden" style="position:absolute; left:-9999px;">Task description</label>
+            <input type="text" id="taskInput" placeholder="e.g. Submit COS 106 term project" required>
+            <label for="taskDue" class="visually-hidden" style="position:absolute; left:-9999px;">Due date</label>
+            <input type="date" id="taskDue" style="max-width:170px;">
+            <button type="submit" class="btn btn--primary">Add Task</button>
+          </form>
+
+          <ul id="taskList" class="task-list"></ul>
+          <p id="taskEmpty" class="task-empty">No tasks yet — add your first one above.</p>
+          <p id="plannerSummary" class="planner-summary">0/0 task(s) completed</p>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    &copy; 2026 Akanni James · COS 106 Term Project · MIVA Open University
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
